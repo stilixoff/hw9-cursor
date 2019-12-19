@@ -138,12 +138,23 @@
         </div>
     </div>
 </section>
-<section class="video">
+<section class="video_main">
     <div class="wrapper">
         <h2 class="h2">как работает <span class="yellow">видеопарктроник?</span></h2>
-        <div id="video">
+        <!-- <div id="video">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/0m4-u8h_vj4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+        </div> -->
+            <div class="video">
+                <a class="video__link" href="https://youtu.be/neHA4MJwpnY">
+                    <picture>
+                        <source srcset="https://i.ytimg.com/vi_webp/neHA4MJwpnY/maxresdefault.webp" type="image/webp">
+                        <img class="video__media" src="https://i.ytimg.com/vi/neHA4MJwpnY/maxresdefault.jpg" alt="1. Пилот, разборы, ответы и лайвы">
+                    </picture>
+                </a>
+                <button class="video__button" type="button" aria-label="Запустить видео">
+                    <svg width="68" height="48" viewBox="0 0 68 48"><path class="video__button-shape" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"></path><path class="video__button-icon" d="M 45,24 27,14 27,34"></path></svg>
+                </button>
+            </div>
     </div>
 </section>
 <section class="how">
@@ -276,48 +287,6 @@
 
     </div>
 </footer>
-<!-- <script src="lib/plugins.js"></script> -->
-<!-- <script>
-    // 2. This code loads the IFrame Player API code asynchronously.
-    var tag = document.createElement('script');
-
-    tag.src = "https://www.youtube.com/iframe_api";
-    var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-    // 3. This function creates an <iframe> (and YouTube player)
-    //    after the API code downloads.
-    var player;
-    function onYouTubeIframeAPIReady() {
-        player = new YT.Player('video', {
-            height: '390',
-            width: '640',
-            videoId: 'M7lc1UVf-VE',
-            events: {
-                'onReady': onPlayerReady,
-                'onStateChange': onPlayerStateChange
-            }
-        });
-    }
-
-    // 4. The API will call this function when the video player is ready.
-    function onPlayerReady(event) {
-        event.target.playVideo();
-    }
-
-    // 5. The API calls this function when the player's state changes.
-    //    The function indicates that when playing a video (state=1),
-    //    the player should play for six seconds and then stop.
-    var done = false;
-    function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.PLAYING && !done) {
-            setTimeout(stopVideo, 6000);
-            done = true;
-        }
-    }
-    function stopVideo() {
-        player.stopVideo();
-    }
-</script> -->
+<script src="js/main.js"></script>
 </body>
 </html>
