@@ -73,7 +73,7 @@ header .phone {
 }
 
 .price {
-    background-image: url("../img/price-bg.png");
+    background-image: url("../img/price-bg.webp");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 120px;
@@ -170,7 +170,7 @@ button {
 .main-screen {
     min-height: 1px;
     height: 700px;
-    background-image: url("../img/main-screen-bg.jpg");
+    background-image: url("../img/main-screen-bg.webp");
     background-position: 50%;
     background-size: cover;
     background-repeat: no-repeat;
